@@ -1,0 +1,20 @@
+### Get All
+GET http://localhost:3000/todos/
+### Por ID
+GET http://localhost:3000/todos/1
+### Create
+POST http://localhost:3000/todos/
+Content-Type: application/json
+Cookie: key=first-value
+
+{ "id":101,"name" : "NodeJS", "description": "Aprender NodeJS" }
+
+### Update
+PUT http://localhost:3000/todos/101
+Content-Type: application/json
+Cookie: key=first-value
+
+{ "id":101,"name" : "NodeJS actualizado", "description": "Aprender NodeJS actualizado" }
+
+### Delete
+DELETE http://localhost:3000/todos/101
