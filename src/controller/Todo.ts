@@ -3,6 +3,7 @@ import { RequestHandler } from "express";
 import { Todo } from "../model/Todo";
 
 export const createToDo: RequestHandler = async (req, res, next) => {
+    console.log("en controller")
     var todos = await Todo.create({ ...req.body });
     return res
         .status(200)
